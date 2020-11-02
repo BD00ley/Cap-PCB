@@ -307,15 +307,13 @@ Wire Wire Line
 	6650 1950 7000 1950
 Wire Wire Line
 	4650 3250 4100 3250
-Wire Wire Line
-	4100 3250 4100 2750
 Connection ~ 4100 1250
 Wire Wire Line
 	4100 1250 5650 1250
 Wire Wire Line
 	4650 3350 4250 3350
 Wire Wire Line
-	4250 3350 4250 2650
+	4250 3350 4250 2750
 Connection ~ 4250 1350
 Wire Wire Line
 	4250 1350 5650 1350
@@ -358,14 +356,9 @@ Wire Wire Line
 Wire Wire Line
 	1100 3400 1200 3400
 Wire Wire Line
-	4100 2750 900  2750
-Wire Wire Line
 	900  2750 900  3500
 Wire Wire Line
 	900  3500 1200 3500
-Connection ~ 4100 2750
-Wire Wire Line
-	4100 2750 4100 2600
 Wire Wire Line
 	9300 1200 9600 1200
 Wire Wire Line
@@ -1588,4 +1581,11 @@ Connection ~ 4100 3550
 NoConn ~ 2400 5950
 Wire Wire Line
 	2000 6850 2000 7050
+Wire Wire Line
+	4100 2600 4100 3250
+Wire Wire Line
+	900  2750 4250 2750
+Connection ~ 4250 2750
+Wire Wire Line
+	4250 2750 4250 2650
 $EndSCHEMATC

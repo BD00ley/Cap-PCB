@@ -1327,8 +1327,6 @@ F 3 "" H 2000 7050 50  0001 C CNN
 	1    2000 7050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2000 7050 2000 6850
 $Comp
 L digikey-slide-switches:EG1218 S1
 U 1 1 5FA0F7D2
@@ -1364,26 +1362,6 @@ Wire Wire Line
 	2000 6450 2000 6050
 Wire Wire Line
 	2600 6150 2400 6150
-$Comp
-L digikey-battery-holders:BC9VPC BAT2
-U 1 1 5FA4B096
-P 4050 6500
-F 0 "BAT2" H 4050 6807 60  0000 C CNN
-F 1 "BC9VPC" H 4050 6701 60  0000 C CNN
-F 2 "digikey-footprints:Battery_Holder_9V_BC9VPC-ND" H 4250 6700 60  0001 L CNN
-F 3 "http://www.memoryprotectiondevices.com/datasheets/BC9VPC-datasheet.pdf" H 4250 6800 60  0001 L CNN
-F 4 "BC9VPC-ND" H 4250 6900 60  0001 L CNN "Digi-Key_PN"
-F 5 "BC9VPC" H 4250 7000 60  0001 L CNN "MPN"
-F 6 "Battery Products" H 4250 7100 60  0001 L CNN "Category"
-F 7 "Battery Holders, Clips, Contacts" H 4250 7200 60  0001 L CNN "Family"
-F 8 "http://www.memoryprotectiondevices.com/datasheets/BC9VPC-datasheet.pdf" H 4250 7300 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/mpd-memory-protection-devices/BC9VPC/BC9VPC-ND/257747" H 4250 7400 60  0001 L CNN "DK_Detail_Page"
-F 10 "BATTERY HOLDER 9V PC PIN" H 4250 7500 60  0001 L CNN "Description"
-F 11 "MPD (Memory Protection Devices)" H 4250 7600 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 4250 7700 60  0001 L CNN "Status"
-	1    4050 6500
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:VCC #PWR09
 U 1 1 5FA5AB87
@@ -1607,4 +1585,7 @@ F 3 "" H 4100 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 4100 3550
+NoConn ~ 2400 5950
+Wire Wire Line
+	2000 6850 2000 7050
 $EndSCHEMATC
