@@ -307,15 +307,13 @@ Wire Wire Line
 	6650 1950 7000 1950
 Wire Wire Line
 	4650 3250 4100 3250
-Wire Wire Line
-	4100 3250 4100 2750
 Connection ~ 4100 1250
 Wire Wire Line
 	4100 1250 5650 1250
 Wire Wire Line
 	4650 3350 4250 3350
 Wire Wire Line
-	4250 3350 4250 2650
+	4250 3350 4250 2750
 Connection ~ 4250 1350
 Wire Wire Line
 	4250 1350 5650 1350
@@ -358,14 +356,9 @@ Wire Wire Line
 Wire Wire Line
 	1100 3400 1200 3400
 Wire Wire Line
-	4100 2750 900  2750
-Wire Wire Line
 	900  2750 900  3500
 Wire Wire Line
 	900  3500 1200 3500
-Connection ~ 4100 2750
-Wire Wire Line
-	4100 2750 4100 2600
 Wire Wire Line
 	9300 1200 9600 1200
 Wire Wire Line
@@ -1588,4 +1581,64 @@ Connection ~ 4100 3550
 NoConn ~ 2400 5950
 Wire Wire Line
 	2000 6850 2000 7050
+Wire Wire Line
+	4100 2600 4100 3250
+Wire Wire Line
+	900  2750 4250 2750
+Connection ~ 4250 2750
+Wire Wire Line
+	4250 2750 4250 2650
+$Comp
+L Switch:SW_MEC_5E SW?
+U 1 1 5FA2A652
+P 3000 2050
+F 0 "SW?" H 3000 2435 50  0000 C CNN
+F 1 "SW_MEC_5E" H 3000 2344 50  0000 C CNN
+F 2 "" H 3000 2350 50  0001 C CNN
+F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371" H 3000 2350 50  0001 C CNN
+	1    3000 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 1950 2500 1950
+Wire Wire Line
+	2500 1950 2500 1650
+Wire Wire Line
+	2500 1650 2250 1650
+$Comp
+L Device:R R?
+U 1 1 5FA3D2A3
+P 2800 2200
+F 0 "R?" H 2870 2246 50  0000 L CNN
+F 1 "10k" H 2870 2155 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P25.40mm_Horizontal" V 2730 2200 50  0001 C CNN
+F 3 "~" H 2800 2200 50  0001 C CNN
+	1    2800 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FA69FA4
+P 2800 2350
+F 0 "#PWR?" H 2800 2100 50  0001 C CNN
+F 1 "GND" H 2805 2177 50  0000 C CNN
+F 2 "" H 2800 2350 50  0001 C CNN
+F 3 "" H 2800 2350 50  0001 C CNN
+	1    2800 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5FA6BB1A
+P 3400 1950
+F 0 "#PWR?" H 3400 1800 50  0001 C CNN
+F 1 "VCC" H 3415 2123 50  0000 C CNN
+F 2 "" H 3400 1950 50  0001 C CNN
+F 3 "" H 3400 1950 50  0001 C CNN
+	1    3400 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 1950 3200 1950
+NoConn ~ 3200 2050
 $EndSCHEMATC

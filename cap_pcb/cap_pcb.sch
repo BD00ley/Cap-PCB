@@ -1588,4 +1588,57 @@ Wire Wire Line
 Connection ~ 4250 2750
 Wire Wire Line
 	4250 2750 4250 2650
+$Comp
+L Switch:SW_MEC_5E SW1
+U 1 1 5FA2A652
+P 3000 2050
+F 0 "SW1" H 3000 2435 50  0000 C CNN
+F 1 "SW_MEC_5E" H 3000 2344 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_MEC_5GTH9" H 3000 2350 50  0001 C CNN
+F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371" H 3000 2350 50  0001 C CNN
+	1    3000 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 1950 2500 1950
+Wire Wire Line
+	2500 1950 2500 1650
+Wire Wire Line
+	2500 1650 2250 1650
+$Comp
+L Device:R R14
+U 1 1 5FA3D2A3
+P 2800 2200
+F 0 "R14" H 2870 2246 50  0000 L CNN
+F 1 "10k" H 2870 2155 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P25.40mm_Horizontal" V 2730 2200 50  0001 C CNN
+F 3 "~" H 2800 2200 50  0001 C CNN
+	1    2800 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5FA69FA4
+P 2800 2350
+F 0 "#PWR0101" H 2800 2100 50  0001 C CNN
+F 1 "GND" H 2805 2177 50  0000 C CNN
+F 2 "" H 2800 2350 50  0001 C CNN
+F 3 "" H 2800 2350 50  0001 C CNN
+	1    2800 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0102
+U 1 1 5FA6BB1A
+P 3400 1950
+F 0 "#PWR0102" H 3400 1800 50  0001 C CNN
+F 1 "VCC" H 3415 2123 50  0000 C CNN
+F 2 "" H 3400 1950 50  0001 C CNN
+F 3 "" H 3400 1950 50  0001 C CNN
+	1    3400 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 1950 3200 1950
+NoConn ~ 3200 2050
 $EndSCHEMATC
