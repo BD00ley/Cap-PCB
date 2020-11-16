@@ -1588,17 +1588,6 @@ Wire Wire Line
 Connection ~ 4250 2750
 Wire Wire Line
 	4250 2750 4250 2650
-$Comp
-L Switch:SW_MEC_5E SW1
-U 1 1 5FA2A652
-P 3000 2050
-F 0 "SW1" H 3000 2435 50  0000 C CNN
-F 1 "SW_MEC_5E" H 3000 2344 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_MEC_5GTH9" H 3000 2350 50  0001 C CNN
-F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371" H 3000 2350 50  0001 C CNN
-	1    3000 2050
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2800 1950 2500 1950
 Wire Wire Line
@@ -1639,6 +1628,25 @@ F 3 "" H 3400 1950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3400 1950 3200 1950
+	3400 1950 3250 1950
 NoConn ~ 3200 2050
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5FB4091C
+P 3050 1950
+F 0 "SW1" H 3050 2235 50  0000 C CNN
+F 1 "SW_Push" H 3050 2144 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm" H 3050 2150 50  0001 C CNN
+F 3 "~" H 3050 2150 50  0001 C CNN
+	1    3050 1950
+	1    0    0    -1  
+$EndComp
+Connection ~ 3250 1950
+Wire Wire Line
+	3250 1950 3200 1950
+Wire Wire Line
+	2800 2050 2800 1950
+Wire Wire Line
+	2850 1950 2800 1950
+Connection ~ 2800 1950
 $EndSCHEMATC

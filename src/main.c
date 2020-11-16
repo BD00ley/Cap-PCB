@@ -52,6 +52,8 @@ uint8_t SEV_SEG(char ALPHANUM) {
         return 0b01111100;
     case ('d' || 'D'):
         return 0b01111010;
+    case ' ':
+        return 0b00000000;
     default:
         return 0b11111111;
     }
